@@ -1,0 +1,398 @@
+[
+  {
+    "id": "728",
+    "startTime": "5530.794",
+    "endTime": "5535.154",
+    "speaker_ID": "SPEAKER_01",
+    "language": "en",
+    "language_posterior": 0.98876953125,
+    "transcription": "And it's all square in Sochi, and it's a hat-trick for Cristiano Ronaldo.",
+    "gender": "male",
+    "gender_posterior": 0.946,
+    "age_estimate": 44.43885,
+    "emotion_posteriors": {
+      "angry": 0.9556,
+      "happy": 0.011,
+      "sad": 0.0009
+    },
+    "positivity_posteriors": {
+      "negative": 0.7531,
+      "positive": 0.0141
+    },
+    "strength_posteriors": {
+      "strong": 0.9528,
+      "weak": 0.0007
+    },
+    "speaking_rate": -0.02429999999999999,
+    "hesitation_posterior": 0.0377,
+    "deepfake_posteriors": {
+      "bonafide": 0.5666,
+      "spoofed": 0.4334
+    },
+    "startTime_hhmmss": "1:32:10",
+    "endTime_hhmmss": "1:32:15",
+    "happy_sum": 0.023915279999999997,
+    "angry_sum": 1.62804936,
+    "sum_all": 2.4779469599999997
+  },
+  {
+    "id": "367",
+    "startTime": "2774.472",
+    "endTime": "2787.012",
+    "speaker_ID": "SPEAKER_00",
+    "language": "en",
+    "language_posterior": 0.96435546875,
+    "transcription": "An error from David de Gea, and Cristiano Ronaldo gets Portugal's second goal of the night, his second goal of the night, and very much against the run of play, Portugal are back in front.",
+    "gender": "female",
+    "gender_posterior": 0.7168,
+    "age_estimate": 37.73745,
+    "emotion_posteriors": {
+      "happy": 0.8289,
+      "angry": 0.1005,
+      "sad": 0.0012
+    },
+    "positivity_posteriors": {
+      "positive": 0.6539,
+      "negative": 0.0462
+    },
+    "strength_posteriors": {
+      "strong": 0.9561,
+      "weak": 0.0005
+    },
+    "speaking_rate": -0.06670000000000001,
+    "hesitation_posterior": 0.0852,
+    "deepfake_posteriors": {
+      "spoofed": 0.5233,
+      "bonafide": 0.4767
+    },
+    "startTime_hhmmss": "0:46:14",
+    "endTime_hhmmss": "0:46:27",
+    "happy_sum": 1.41770508,
+    "angry_sum": 0.14025986999999998,
+    "sum_all": 2.336947425
+  },
+  {
+    "id": "373",
+    "startTime": "2827.379",
+    "endTime": "2833.779",
+    "speaker_ID": "SPEAKER_01",
+    "language": "en",
+    "language_posterior": 0.99365234375,
+    "transcription": "because just before half-time Cristiano Ronaldo has turned this group match back in Portugal's favour.",
+    "gender": "male",
+    "gender_posterior": 0.9738,
+    "age_estimate": 51.85975,
+    "emotion_posteriors": {
+      "angry": 0.9459,
+      "happy": 0.0133,
+      "sad": 0.0008
+    },
+    "positivity_posteriors": {
+      "negative": 0.7249,
+      "positive": 0.0139
+    },
+    "strength_posteriors": {
+      "strong": 0.8359,
+      "weak": 0.0014
+    },
+    "speaking_rate": 0.2636,
+    "hesitation_posterior": 0.0318,
+    "deepfake_posteriors": {
+      "spoofed": 0.9632,
+      "bonafide": 0.0368
+    },
+    "startTime_hhmmss": "0:47:07",
+    "endTime_hhmmss": "0:47:13",
+    "happy_sum": 0.022736479999999996,
+    "angry_sum": 1.3966217199999997,
+    "sum_all": 2.1290373
+  },
+  {
+    "id": "182",
+    "startTime": "1424.8890000000001",
+    "endTime": "1432.229",
+    "speaker_ID": "SPEAKER_00",
+    "language": "en",
+    "language_posterior": 0.9951171875,
+    "transcription": "A little touch from Bernardo Silva, and Portugal are away. It's three against two here if the ball can be played correctly. Ronaldo in field!",
+    "gender": "male",
+    "gender_posterior": 0.9096,
+    "age_estimate": 48.2008,
+    "emotion_posteriors": {
+      "happy": 0.8905,
+      "angry": 0.0272,
+      "sad": 0.0012
+    },
+    "positivity_posteriors": {
+      "positive": 0.6671,
+      "negative": 0.0143
+    },
+    "strength_posteriors": {
+      "strong": 0.8844,
+      "weak": 0.0013
+    },
+    "speaking_rate": 0.5645,
+    "hesitation_posterior": 0.0259,
+    "deepfake_posteriors": {
+      "bonafide": 0.8465,
+      "spoofed": 0.1535
+    },
+    "startTime_hhmmss": "0:23:44",
+    "endTime_hhmmss": "0:23:52",
+    "happy_sum": 1.37754144,
+    "angry_sum": 0.036702599999999995,
+    "sum_all": 2.1213660599999997
+  },
+  {
+    "id": "137",
+    "startTime": "1102.287",
+    "endTime": "1112.027",
+    "speaker_ID": "SPEAKER_00",
+    "language": "en",
+    "language_posterior": 0.9912109375,
+    "transcription": "Away by Ronaldo, and Portugal might be able to break away here, it's Gonzalo Guedas. And Ronaldo making the run on this near side. Guedas will have to go all the way on his own.",
+    "gender": "male",
+    "gender_posterior": 0.9595,
+    "age_estimate": 47.5665,
+    "emotion_posteriors": {
+      "happy": 0.7314,
+      "angry": 0.108,
+      "sad": 0.0018
+    },
+    "positivity_posteriors": {
+      "positive": 0.4283,
+      "negative": 0.0475
+    },
+    "strength_posteriors": {
+      "strong": 0.9151,
+      "weak": 0.0006
+    },
+    "speaking_rate": 0.8372999999999999,
+    "hesitation_posterior": 0.0413,
+    "deepfake_posteriors": {
+      "bonafide": 0.663,
+      "spoofed": 0.337
+    },
+    "startTime_hhmmss": "0:18:22",
+    "endTime_hhmmss": "0:18:32",
+    "happy_sum": 1.06124147,
+    "angry_sum": 0.14229805,
+    "sum_all": 1.80530928
+  },
+  {
+    "id": "215",
+    "startTime": "1670.191",
+    "endTime": "1677.131",
+    "speaker_ID": "SPEAKER_01",
+    "language": "en",
+    "language_posterior": 0.990234375,
+    "transcription": "Oh, it's off the underside of the bar. Diego Costa, can he bundle it in? Rui Patricio with the save. Now the flag is up on this near side.",
+    "gender": "male",
+    "gender_posterior": 0.9287,
+    "age_estimate": 51.64215,
+    "emotion_posteriors": {
+      "happy": 0.5316,
+      "angry": 0.3116,
+      "sad": 0.0016
+    },
+    "positivity_posteriors": {
+      "positive": 0.3047,
+      "negative": 0.1564
+    },
+    "strength_posteriors": {
+      "strong": 0.9014,
+      "weak": 0.0005
+    },
+    "speaking_rate": 0.7674,
+    "hesitation_posterior": 0.058,
+    "deepfake_posteriors": {
+      "bonafide": 0.7337,
+      "spoofed": 0.2663
+    },
+    "startTime_hhmmss": "0:27:50",
+    "endTime_hhmmss": "0:27:57",
+    "happy_sum": 0.75384082,
+    "angry_sum": 0.4218552,
+    "sum_all": 1.7635440299999998
+  },
+  {
+    "id": "27",
+    "startTime": "285.423",
+    "endTime": "292.923",
+    "speaker_ID": "SPEAKER_00",
+    "language": "en",
+    "language_posterior": 0.9853515625,
+    "transcription": "Inside the opening three minutes, Cristiano Ronaldo fouled in the penalty area and Portugal have the opportunity to take the lead.",
+    "gender": "male",
+    "gender_posterior": 0.6369,
+    "age_estimate": 43.86744999999999,
+    "emotion_posteriors": {
+      "angry": 0.7501,
+      "happy": 0.0647,
+      "sad": 0.0013
+    },
+    "positivity_posteriors": {
+      "negative": 0.3516,
+      "positive": 0.0434
+    },
+    "strength_posteriors": {
+      "strong": 0.8924,
+      "weak": 0.0007
+    },
+    "speaking_rate": 0.25159999999999993,
+    "hesitation_posterior": 0.037,
+    "deepfake_posteriors": {
+      "bonafide": 0.7782,
+      "spoofed": 0.2218
+    },
+    "startTime_hhmmss": "0:04:45",
+    "endTime_hhmmss": "0:04:52",
+    "happy_sum": 0.09646844,
+    "angry_sum": 0.9831570800000001,
+    "sum_all": 1.6194382800000002
+  },
+  {
+    "id": "488",
+    "startTime": "3705.177",
+    "endTime": "3709.457",
+    "speaker_ID": "SPEAKER_00",
+    "language": "en",
+    "language_posterior": 0.9833984375,
+    "transcription": "Nacho, the man who gave away the penalty early on in this match.",
+    "gender": "male",
+    "gender_posterior": 0.9462,
+    "age_estimate": 51.225699999999996,
+    "emotion_posteriors": {
+      "angry": 0.7539,
+      "happy": 0.052,
+      "sad": 0.0017
+    },
+    "positivity_posteriors": {
+      "negative": 0.3748,
+      "positive": 0.0294
+    },
+    "strength_posteriors": {
+      "strong": 0.8761,
+      "weak": 0.0007
+    },
+    "speaking_rate": -0.3509,
+    "hesitation_posterior": 0.0779,
+    "deepfake_posteriors": {
+      "bonafide": 0.7617,
+      "spoofed": 0.2383
+    },
+    "startTime_hhmmss": "1:01:45",
+    "endTime_hhmmss": "1:01:49",
+    "happy_sum": 0.07131454,
+    "angry_sum": 0.98885407,
+    "sum_all": 1.5902529150000002
+  },
+  {
+    "id": "219",
+    "startTime": "1694.882",
+    "endTime": "1698.942",
+    "speaker_ID": "SPEAKER_01",
+    "language": "en",
+    "language_posterior": 0.994140625,
+    "transcription": "would have alerted the referee to the fact that the ball had crossed the line.",
+    "gender": "male",
+    "gender_posterior": 0.9287,
+    "age_estimate": 51.64215,
+    "emotion_posteriors": {
+      "angry": 0.7944,
+      "happy": 0.0333,
+      "sad": 0.0024
+    },
+    "positivity_posteriors": {
+      "negative": 0.4639,
+      "positive": 0.0141
+    },
+    "strength_posteriors": {
+      "strong": 0.8048,
+      "weak": 0.001
+    },
+    "speaking_rate": 0.7347,
+    "hesitation_posterior": 0.0511,
+    "deepfake_posteriors": {
+      "spoofed": 0.9954,
+      "bonafide": 0.0046
+    },
+    "startTime_hhmmss": "0:28:14",
+    "endTime_hhmmss": "0:28:18",
+    "happy_sum": 0.038147520000000004,
+    "angry_sum": 1.0126798399999999,
+    "sum_all": 1.57624104
+  },
+  {
+    "id": "581",
+    "startTime": "4397.871",
+    "endTime": "4407.551",
+    "speaker_ID": "SPEAKER_00",
+    "language": "en",
+    "language_posterior": 0.99462890625,
+    "transcription": "And the change for Spain sees Andres Iniesta. The man who won the World Cup for Spain in two thousand and ten go off to a standing ovation.",
+    "gender": "male",
+    "gender_posterior": 0.9266,
+    "age_estimate": 49.856350000000006,
+    "emotion_posteriors": {
+      "happy": 0.738,
+      "angry": 0.0545,
+      "sad": 0.0016
+    },
+    "positivity_posteriors": {
+      "positive": 0.448,
+      "negative": 0.0263
+    },
+    "strength_posteriors": {
+      "strong": 0.7771,
+      "weak": 0.0013
+    },
+    "speaking_rate": -0.20249999999999999,
+    "hesitation_posterior": 0.0737,
+    "deepfake_posteriors": {
+      "spoofed": 0.9526,
+      "bonafide": 0.0474
+    },
+    "startTime_hhmmss": "1:13:17",
+    "endTime_hhmmss": "1:13:27",
+    "happy_sum": 0.9216405999999999,
+    "angry_sum": 0.06278968,
+    "sum_all": 1.4766454199999999
+  },
+  {
+    "id": "663",
+    "startTime": "4951.007",
+    "endTime": "4958.727",
+    "speaker_ID": "SPEAKER_00",
+    "language": "en",
+    "language_posterior": 0.9912109375,
+    "transcription": "Ronaldo. De Gea has come out. Ronaldo's touch. Picked up here by Carisma. And handball from the Portuguese substitute.",
+    "gender": "male",
+    "gender_posterior": 0.9979,
+    "age_estimate": 46.8861,
+    "emotion_posteriors": {
+      "angry": 0.8174,
+      "happy": 0.0128,
+      "sad": 0.0017
+    },
+    "positivity_posteriors": {
+      "negative": 0.423,
+      "positive": 0.0078
+    },
+    "strength_posteriors": {
+      "strong": 0.774,
+      "weak": 0.0014
+    },
+    "speaking_rate": 0.4921,
+    "hesitation_posterior": 0.1485,
+    "deepfake_posteriors": {
+      "spoofed": 0.9994,
+      "bonafide": 0.0006
+    },
+    "startTime_hhmmss": "1:22:31",
+    "endTime_hhmmss": "1:22:38",
+    "happy_sum": 0.0159444,
+    "angry_sum": 0.9600696,
+    "sum_all": 1.4640209999999998
+  }
+]
