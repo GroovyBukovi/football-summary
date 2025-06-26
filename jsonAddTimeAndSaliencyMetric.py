@@ -3,8 +3,8 @@ from datetime import timedelta
 import numpy as np
 
 # === CONFIG ===
-INPUT_JSON = "final_features-Liv-MAC.json"
-OUTPUT_JSON = "output_segments_with_hhmmss-Liv-MAC.json"
+INPUT_JSON = "final_features-CRY-MAC.json"
+OUTPUT_JSON = "output_segments_with_hhmmss-CRY-MAC.json"
 
 # === Utility: Convert seconds to hh:mm:ss ===
 def seconds_to_hhmmss(seconds):

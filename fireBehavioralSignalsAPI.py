@@ -8,11 +8,11 @@ from moviepy import VideoFileClip
 
 
 # === CONFIG ===
-video_path = "FULL MATCH_ Portugal v Spain _ 2018 FIFA World Cup.mp4"
-output_wav = "PORT-SPAIN.wav"
+video_path = "FULL MATCH _ Liverpool 3-1 Manchester City _ FA Community Shield 2022-23.mp4"
+output_wav = "LIV-MAC.wav"
 segment_duration_ms = 5 * 60 * 1000  # 30 minutes in milliseconds
-segments_dir = "segments-PORT-SPAIN"
-final_output_json = "final_features-PORT-SPAIN.json"
+segments_dir = "segments-LIV-MAC"
+final_output_json = "final_features-LIV-MAC.json"
 api_script = "send_data_to_api.py"  # from the Behavioral Signals repo
 
 # === STEP 1: Extract audio from MP4 ===
