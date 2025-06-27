@@ -4,10 +4,10 @@ import subprocess
 from pathlib import Path
 
 # === CONFIG ===
-VIDEO_PATH = "REAL 2-3 BARCA.mp4"
-HIGHLIGHTS_JSON = "highlights-REAL-BARCA.json"
+VIDEO_PATH = "FULL MATCH_ Portugal v Spain _ 2018 FIFA World Cup.mp4"
+HIGHLIGHTS_JSON = "highlights-PORT-SPAIN.json"
 CLIPS_DIR = Path("highlight_clips")
-FINAL_OUTPUT = "MESSSSSiii.mp4"
+FINAL_OUTPUT = "montage_final.mp4"
 CLIP_LIST_FILE = CLIPS_DIR / "clip_list.txt"
 PADDING = 10  # seconds to add before and after each segment
 
