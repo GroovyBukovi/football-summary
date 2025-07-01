@@ -2,11 +2,11 @@ import json
 from datetime import timedelta
 import numpy as np
 
-# === CONFIG ===
+
 INPUT_JSON = "final_features-CRY-MAC.json"
 OUTPUT_JSON = "output_segments_with_hhmmss-CRY-MAC.json"
 
-# === Utility: Convert seconds to hh:mm:ss ===
+# convert seconds to hh:mm:ss
 def seconds_to_hhmmss(seconds):
     return str(timedelta(seconds=float(seconds))).split(".")[0]
 
@@ -17,7 +17,7 @@ with open(INPUT_JSON, "r") as f:
 sum_all_list = []
 strong_list = []
 
-# === Process each segment ===
+# Process each segment
 for segment in data:
     # Convert time
     segment["startTime_hhmmss"] = seconds_to_hhmmss(segment["startTime"])
@@ -49,7 +49,7 @@ for segment in data:
     sum_all_list.append(sum_all)
     strong_list.append(strong)
 
-# === Compute summary statistics ===
+# Compute summary statistics
 def compute_stats(values):
     return {
         "mean": float(np.mean(values)),
@@ -66,7 +66,7 @@ summary_stats = {
     }
 }
 
-# === Save full output with stats at the end ===
+# Save full output with stats at the end
 output_data = data + [summary_stats]
 
 with open(OUTPUT_JSON, "w") as f:

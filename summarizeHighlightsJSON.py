@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 INPUT_JSON = "output_segments_with_hhmmss-PORT-SPAIN.json"
 OUTPUT_JSON = "highlights-PORT-SPAIN.json"
 MIN_DURATION = 4.0  # seconds
-TOP_PERCENT = 6  # percentage of top saliency segments to keep
+TOP_PERCENT = 7  # percentage of top saliency segments to keep
 
 # === Load data ===
 with open(INPUT_JSON, "r") as f:

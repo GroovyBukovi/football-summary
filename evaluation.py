@@ -88,7 +88,7 @@ def evaluate(preds, gts, mode="strict"):
     }
 
 
-# === Run evaluation ===
+# Run evaluation
 print("Choose Evaluation Mode:\n 1. Strict (exact second-based overlap)\n 2. Flexible (≥75% coverage equals full match)\n 3. Super Flexible (≥20% coverage equals full match)")
 mode_input = input("Enter 1, 2 or 3: ").strip()
 mode = "flexible" if mode_input == "2" else "superflexible" if mode_input == "3" else "strict"
