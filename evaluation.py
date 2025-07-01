@@ -18,6 +18,7 @@ def load_segments(path):
         ]
 
 
+
 def compute_global_iou(preds, gts):
     """Calculate IoU based on total overlapping time vs total union time."""
     pred_mask = np.zeros(max(e for _, e in preds + gts) + 1, dtype=bool)
@@ -33,8 +34,8 @@ def compute_global_iou(preds, gts):
     return intersection / union if union > 0 else 0.0
 
 
-def relaxed_match(pred, gt, threshold=0.9):
-    """Return True if prediction covers at least threshold proportion of GT."""
+def relaxed_match(pred, gt, threshold):
+    """Return True if prediction covers at least `threshold` proportion of GT."""
     overlap = max(0, min(pred[1], gt[1]) - max(pred[0], gt[0]))
     gt_length = gt[1] - gt[0]
     return overlap / gt_length >= threshold
@@ -44,11 +45,13 @@ def evaluate(preds, gts, mode="strict"):
     pred_mask = np.zeros(max(e for _, e in preds + gts) + 1, dtype=bool)
     gt_mask = np.zeros_like(pred_mask)
 
-    if mode == "flexible":
+    threshold = 0.75 if mode == "flexible" else (0.2 if mode == "superflexible" else None)
+
+    if threshold is not None:
         matched_gts = set()
         for ps, pe in preds:
             for idx, (gs, ge) in enumerate(gts):
-                if idx not in matched_gts and relaxed_match((ps, pe), (gs, ge)):
+                if idx not in matched_gts and relaxed_match((ps, pe), (gs, ge), threshold):
                     pred_mask[gs:ge + 1] = True
                     gt_mask[gs:ge + 1] = True
                     matched_gts.add(idx)
@@ -85,10 +88,10 @@ def evaluate(preds, gts, mode="strict"):
     }
 
 
-# === Run evaluation ===
-print("Choose Evaluation Mode:\n 1. Strict (exact second-based overlap)\n 2. Flexible (≥90% coverage equals full match)")
-mode_input = input("Enter 1 or 2: ").strip()
-mode = "flexible" if mode_input == "2" else "strict"
+# Run evaluation
+print("Choose Evaluation Mode:\n 1. Strict (exact second-based overlap)\n 2. Flexible (≥75% coverage equals full match)\n 3. Super Flexible (≥20% coverage equals full match)")
+mode_input = input("Enter 1, 2 or 3: ").strip()
+mode = "flexible" if mode_input == "2" else "superflexible" if mode_input == "3" else "strict"
 
 ground_truth = load_segments("highlights-GROUNDTRUTH.json")
 predictions = load_segments("highlights-PORT-SPAIN.json")

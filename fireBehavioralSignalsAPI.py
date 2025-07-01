@@ -7,7 +7,7 @@ from pydub import AudioSegment
 from moviepy import VideoFileClip
 
 
-# === CONFIG ===
+
 video_path = "FULL MATCH _ Liverpool 3-1 Manchester City _ FA Community Shield 2022-23.mp4"
 output_wav = "LIV-MAC.wav"
 segment_duration_ms = 5 * 60 * 1000  # 30 minutes in milliseconds
@@ -15,7 +15,7 @@ segments_dir = "segments-LIV-MAC"
 final_output_json = "final_features-LIV-MAC.json"
 api_script = "send_data_to_api.py"  # from the Behavioral Signals repo
 
-# === STEP 1: Extract audio from MP4 ===
+# Extract audio from MP4
 def extract_audio(video_path, wav_path):
     print("🎵 Extracting audio from MP4...")
     video = VideoFileClip(video_path)
@@ -23,7 +23,7 @@ def extract_audio(video_path, wav_path):
     audio.write_audiofile(wav_path, codec="pcm_s16le")
     print(f"✅ Audio saved to {wav_path}")
 
-# === STEP 2: Split audio into segments ===
+# Split audio into segments
 def split_audio(wav_path, output_dir):
     print("✂️ Splitting audio...")
     audio = AudioSegment.from_wav(wav_path)
@@ -46,37 +46,6 @@ def process_segments_with_api(num_parts):
     for i in range(num_parts):
         segment_path = os.path.join(segments_dir, f"part_{i}.wav")
         subprocess.run(["python3", api_script, "-i", segment_path], check=True)
-
-# === STEP 4: Merge all *_features.json ===
-"""def merge_jsons(num_parts):
-    print("🧩 Merging responses...")
-    merged = []
-    offset_seconds = 0.0
-
-    for i in range(num_parts):
-        segment_file = os.path.join(segments_dir, f"part_{i}.wav")
-        json_file = f"{segment_file[:-4]}_features.json"
-
-        if not os.path.exists(json_file):
-            print(f"⚠️ Warning: Missing {json_file}, skipping.")
-            continue
-
-        with open(json_file) as f:
-            data = json.load(f)
-
-        # Adjust timestamps
-        for entry in data:
-            entry["startTime"] = str(float(entry["startTime"]) + offset_seconds)
-            entry["endTime"] = str(float(entry["endTime"]) + offset_seconds)
-            merged.append(entry)
-
-        # Update offset
-        audio = AudioSegment.from_wav(segment_file)
-        offset_seconds += len(audio) / 1000.0
-
-    with open(final_output_json, "w") as f:
-        json.dump(merged, f, indent=2)
-    print(f"✅ Final merged JSON saved to {final_output_json}")"""
 
 global_id = 0  # unique ID counter
 
@@ -115,13 +84,13 @@ def merge_jsons(num_parts):
     print(f"✅ Final merged JSON saved to {final_output_json}")
 
 
-# Step 1: Extract audio from video
+# Extract audio from video
 extract_audio(video_path, output_wav)
 
-# Step 2: Split extracted audio into segments
+# Split extracted audio into segments
 num_parts = split_audio(output_wav, segments_dir)
 
-# Step 3: Send each segment to the API and save results
+# Send each segment to the API and save results
 process_segments_with_api(num_parts)
 
 from pathlib import Path

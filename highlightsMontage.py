@@ -3,7 +3,7 @@ import os
 import subprocess
 from pathlib import Path
 
-# === CONFIG ===
+
 VIDEO_PATH = "FULL MATCH_ Portugal v Spain _ 2018 FIFA World Cup.mp4"
 HIGHLIGHTS_JSON = "highlights-PORT-SPAIN.json"
 CLIPS_DIR = Path("highlight_clips")
@@ -11,7 +11,7 @@ FINAL_OUTPUT = "montage_final.mp4"
 CLIP_LIST_FILE = CLIPS_DIR / "clip_list.txt"
 PADDING = 10  # seconds to add before and after each segment
 
-# === Load and pad segments ===
+# Load and pad segments
 with open(HIGHLIGHTS_JSON, "r") as f:
     highlights = json.load(f)
 
@@ -36,10 +36,10 @@ for start, end in padded_segments:
         else:
             merged_segments.append([start, end])
 
-# === Create clips directory ===
+# Create clips directory
 CLIPS_DIR.mkdir(parents=True, exist_ok=True)
 
-# === Extract merged segments ===
+# Extract merged segments
 clip_paths = []
 
 for idx, (start, end) in enumerate(merged_segments):
@@ -60,12 +60,12 @@ for idx, (start, end) in enumerate(merged_segments):
     subprocess.run(cmd, check=True)
     print(f"🎞️  Saved: {clip_output}")
 
-# === Write list file for FFmpeg concat ===
+# Write list file for FFmpeg concat
 with open(CLIP_LIST_FILE, "w") as f:
     for filename in clip_paths:
         f.write(f"file '{filename}'\n")
 
-# === Concatenate all clips ===
+# Concatenate all clips
 concat_cmd = [
     "ffmpeg",
     "-f", "concat",
