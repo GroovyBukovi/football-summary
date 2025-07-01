@@ -94,7 +94,7 @@ mode_input = input("Enter 1, 2 or 3: ").strip()
 mode = "flexible" if mode_input == "2" else "superflexible" if mode_input == "3" else "strict"
 
 ground_truth = load_segments("highlights-GROUNDTRUTH.json")
-predictions = load_segments("highlights-PORTUGAL-SPAIN-final.json")
+predictions = load_segments("highlights-PORT-SPAIN.json")
 
 metrics = evaluate(predictions, ground_truth, mode=mode)
 
